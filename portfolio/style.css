@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(fonts/Inter-SemiBold.otf);
+}
+
+@font-face {
+    font-family: inter-Light;
+    src: url(fonts/Inter-Light.otf);
+}
+
+:root {
+    --index: calc(1vh + 1vw)
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter-Light;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+#head {
+    background-image: url(photos/background.png);
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+}
+
+#icon {
+    width: calc(var(--index)* 22);
+    position: relative;
+    bottom: -30px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+
+    position: relative;
+    bottom: calc(var(--index) * -4);
+}
+
+#arrow {
+    position: relative;
+    bottom: calc(var(--index) * -6);
+    display: flex;
+    justify-content: center;
+
+    transition: all ease 1s .1s;
+
+    
+}
+#arrow > img {
+    display: block;
+    cursor: pointer;
+    height: calc(var(--index) * 2);
+    
+}
+
+h1 {
+    position: relative;
+    z-index: 100;
+    width: calc(var(--index) * 22);
+}
+h1 > span  {
+    font-family: Inter-SemiBold;
+    font-size: calc(var(--index) * 4.3);
+    color: white;
+    position: relative;
+    left: 100px;
+    text-shadow: 1px 1px 1px black;    
+    line-height: calc(var(--index) * 5);
+
+}
+
+
+#info {
+    width: 100vw;
+    background-color: #232323;
+    
+    
+}
+
+#photo_knowlebge {
+    height: calc(var(--index) * 14);
+    position: relative;
+    right: 800px;
+}
+
+ul {
+    margin-left: calc(var(--index) * 2);
+    margin-top: calc(var(--index) * 0.7);
+}
+ul li {
+    list-style-image: url(photos/list_item.png) ;
+    font-family: Inter-Light;
+    color: white;
+    font-size: calc(var(--index) *1.2);
+    line-height: calc(var(--index) * 2); 
+
+    position: relative;
+    left: 800px;
+}
+
+#knows {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    padding-bottom: calc(var(--index) * 3);
+
+}
+
+table td:nth-child(1) {
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+table {
+    width: 100vw;
+    padding-top: calc(var(--index) * 3);
+}
+
+strong {
+    color: white;
+    font-family: Inter-SemiBold;
+    font-size: calc(var(--index) * 1.5);
+    position: relative;
+    left: 800px;
+}
+
+
+
+h3 {
+    color: #00FFC2;
+    font-family: Inter-Light;
+    font-size: calc(var(--index) * 1.2);
+    text-align: center;
+    padding: calc(var(--index) * 0.5);
+    opacity: 0;
+
+}
+#prip {
+    font-family: Inter-Light;
+    font-style: italic;
+}
+
+#projects {
+    margin-top: calc(var(--index) * 1);
+    padding-bottom: calc(var(--index) * 1);
+    width:  100vw;
+    text-align: center;
+    justify-content: center;
+    
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: calc(var(--index) * 2);
+
+}
+
+
+.project {
+    height: calc(var(--index) * 18);
+    width: calc(var(--index) * 13.5);
+    border-radius: 8px;
+    opacity: 0;
+    position: relative;
+
+
+}
+
+.front {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+
+    
+}
+.project-img {
+    height: 100%;
+    width: 100%;
+    transition: all 1s .1s ease;
+}
+
+
+.under_project {
+    overflow: hidden;
+}
+.hidden > p {
+
+    position: relative;
+    top: 20%;
+
+}
+.hidden > a > .button {
+    left: 4%;
+    position: relative;
+    top: 30%;
+    padding: 3% 45% 3% 45%;
+
+
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: white 3px solid;
+    border-radius: 3px;
+
+}
+.button-text {
+    position: relative;
+    left: calc(var(--index) * -2.6);
+}
+
+.github {
+    position: relative;
+    top: 2%;
+}
+
+.hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    width: 100%; 
+    height: 100%;
+    color: white;
+    font-size: calc(var(--index) * 1.5);
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 1s .1s ease;
+    text-shadow: 1px 1px 1px rgb(82, 82, 82);
+
+}
+
+
+
+
+
+footer {
+    width: 100vw;
+    height: calc(var(--index) * 10);
+    background-color: #1b1b1b;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+}
+
+a > figure > img {
+    height: calc(var(--index) * 4);
+}
+
+figcaption {
+    font-size: calc(var(--index) * 1);
+    font-family: Inter-SemiBold;
+    color: white;
+    text-align: center;
+    
+}
+
+a#link {
+    text-decoration: none;  
+    transition: all 1s .1s ease;
+}
+
+
+/* Ховеры */
+
+.hidden:hover {
+    opacity: 1;
+}
+.hidden:hover  .project-img {
+    transform: scale(2);
+    filter: blur(40px);
+}
+.project:hover .project-img {
+    transform: scale(1.5);
+    filter: blur(5px);
+}
+
+a#link:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+#arrow:hover {
+    transform: scale(1.05);
+}
+
